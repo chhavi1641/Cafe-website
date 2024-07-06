@@ -1,0 +1,472 @@
+
+.oswald {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+.fwhite{
+    color: white;
+}
+.fgol{
+    color: #CC9966;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+.rale{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+//   navar
+
+ 
+ .navbar {
+   height: 80px;
+   background-color: transparent;
+   border: none;
+   color: white;
+   z-index: 100;
+   transition: background-color 1s ease 0s;
+ }
+ 
+ 
+ .navbar-default {
+   
+    .navbar-brand {
+      margin-top: 10px;
+      color: white;
+         
+       &:hover {
+          color: #CC9966;
+          border-bottom: 1px solid #CC9966;
+       } 
+    }
+    
+   .navbar-nav {
+     
+     > li {
+       
+       > a {
+         color: white;
+         margin-top: 14px;
+         padding-left: 50px;
+        //  text-align: center;
+         border: 1px solid transparent;
+         
+       }
+       > a:hover, > a:active, > a:focus {
+         color: #CC9966;
+         border-bottom: 1px solid #CC9966;
+       }
+       > a:visited {
+         color: #CC9966;
+         text-decoration: none;
+       }
+ 
+     } //end li
+ 
+     > .active {
+ 
+       > a, > a:hover, > a:focus {
+         background-color: transparent;
+         color: #CC9966;
+         border-bottom: 1px solid #CC9966;
+       }
+ 
+     }
+ 
+   } //end .navbar-nav
+ 
+   //Collapsed styles
+   .navbar-toggle {
+     border-color: #CC9966;
+ 
+       &:hover, &:focus {
+         background-color: rgba(0, 0, 0, 0.7);
+       }
+ 
+ 
+ 
+       .icon-bar {
+         color: #CC9966;
+         background-color: #C57ED3;
+ 
+       }
+   }
+ 
+   .navbar-collapse.collapse.in ul {
+     background-color: rgba(0, 0, 0, 0.7);
+   }
+     
+ } //end .navbar-default
+ 
+ 
+ 
+ /* Solid class attached on scroll past first section */
+ 
+ .navbar.solid {
+   background-color: rgba(0, 0, 0, 0.7);
+   transition: background-color 1s ease 0s;
+   box-shadow: 0 0 4px grey;
+ 
+     .navbar-brand {
+       color: #CC9966;
+       transition: color 1s ease 0s;
+     }
+ 
+     .navbar-nav {
+ 
+        > li {
+ 
+           > a {
+             color: #CC9966;
+             transition: color 1s ease 0s;
+           }
+ 
+        } //end li
+ 
+     } //end .navbar-nav
+ 
+ }
+ 
+// parallax
+
+   
+  #about {
+    background: url(img/antique-cafe-bg-01.jpg) 50% 0 no-repeat fixed; min-height: 1000px;
+    background-size: cover;
+    height: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    // max-width: 1920px;
+    position: relative;
+    /* -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8); */
+    /* box-shadow: 0 0 50px rgba(0,0,0,0.8); */
+  }
+   
+  #about article {
+    // background: url("https://cdn.tutsplus.com/net/uploads/legacy/2138_SimpleParallax/Demo/images/parallax.png") no-repeat scroll center top transparent;
+    height: 1000px; 
+    position: absolute; 
+    // text-indent: -9999px; 
+    top: 180px; 
+    width: 100%;
+  }
+  #home {
+    background: url(img/antique-cafe-bg-02.jpg) 50% 0 no-repeat fixed; min-height: 1000px;
+    background-size: cover;
+    height: 1225px;
+    margin: 0 auto;
+    // width: 100%;
+    // max-width: 1920px;
+    position: relative;
+  }
+   
+  #home article {
+    height: 458px; 
+    position: absolute; 
+    // text-indent: -9999px; 
+    top: 191px; 
+    width: 100%;
+  }
+
+  #para1 {
+    background: url(img/antique-cafe-bg-03.jpg) 50% 0 no-repeat fixed; min-height: 400px;
+    background-size: cover;
+    height: 1000px;
+    margin: 0 auto;
+    // margin-top: 50px;
+    width: 100%;
+    // max-width: 1920px;
+    position: relative;
+    /* -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8); */
+    /* box-shadow: 0 0 50px rgba(0,0,0,0.8); */
+  }
+   
+  #para1 article {
+    background: url("https://cdn.tutsplus.com/net/uploads/legacy/2138_SimpleParallax/Demo/images/parallax.png") no-repeat scroll center top transparent;
+    height: 1px; 
+    position: absolute; 
+    // text-indent: -9999px; 
+    top: 191px;
+    width: 100%;
+  }
+  #para2 {
+    background: url(img/antique-cafe-bg-04.jpg) 50% 0 no-repeat fixed; min-height: 400px;
+    background-size: cover;
+    height: 1000px;
+    margin: 0 auto;
+    // margin-top: 50px;
+    width: 100%;
+    // max-width: 1920px;
+    position: relative;
+    /* -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8); */
+    /* box-shadow: 0 0 50px rgba(0,0,0,0.8); */
+  }
+   
+  #para2 article {
+    background: url("https://cdn.tutsplus.com/net/uploads/legacy/2138_SimpleParallax/Demo/images/parallax.png") no-repeat scroll center top transparent;
+    height: 1px; 
+    position: absolute; 
+    // text-indent: -9999px; 
+    top: 191px;
+    width: 100%;
+  }
+
+
+  .intro{
+    font-size: 25px;
+    padding-right: 10px;
+  }
+  .box1{
+    // background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: +2;
+    width: 400px;
+    height: 190px;
+    
+
+  }
+  .center{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .anca{
+    font-size: 45px;
+    padding-top: 39px;
+  }
+  .subhead{
+    padding-top: 15px;
+  }
+  .box2{
+    // background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: +2;
+    width: 400px;
+    min-height: 190px;
+    
+
+  }
+.thisis{
+    padding: 35px 35px 35px 35px;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.788);
+    line-height: 31px;
+
+}
+.sum{
+    background-color: transparent;
+    border-color: transparent;
+    color: #FF6;
+    transition: 0.2s;
+}
+.sum:hover{
+
+    color: #9FF;
+}
+.box3{
+    // background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: +2;
+    width: 230px;
+    min-height: 93px;
+    border-radius: 10px;
+
+  }
+  .cuptxt{
+    background-color: transparent;
+    border-width: 0px;
+    color: #CC9966;
+    transition: 0.2s;
+    font-weight:600 ;
+  }
+  .cuptxt:hover{
+
+    color: white;
+    transition: 0.2s;
+    font-weight:600 ;
+    
+  }
+
+//   .menubox{
+//     width: 200px;
+//     height: 100px;
+//     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+//     z-index: +5;
+//   }
+  .menubox{
+    background-color: white;
+    z-index: 2;
+    width: 350px;
+    height: 86px;
+    border-radius: 5px;
+
+  }
+  .ocm{
+    color: #544639;
+    font-size: 35px;
+    padding-top: 23px;
+  }
+  .greybox{
+    width: 500px;
+    height: 590px;
+    background-color:#544639 ;
+    margin-top: 100px;
+    border-radius: 15px;
+  }
+  .price{
+    font-size: 17px;
+  }
+  .menu{
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .gbox {
+    width: 517px;
+    min-height: 437px;
+    background-color: rgba(255, 255, 255, 0.767);
+    margin-left: auto;
+    margin-right: 95px;
+    border-radius: 15px;
+}
+.grbox {
+    width: 167px;
+    min-height: 60px;
+    background-color: #006666;
+    margin-left: auto;
+    margin-right: 445px;
+    border-radius: 5px;
+    margin-top: 21px;
+}
+.aoc{
+    padding: 45px;
+    color: #006666;
+}
+.pa1{
+    margin-top: -20px;
+    padding-left: 45px;
+    padding-right: 45px;
+    line-height: 3rem;
+    font-size: 17px;
+    font-weight: 400;
+}
+.pa2{
+    // margin-top: -20px;
+    padding-left: 45px;
+    padding-right: 45px;
+    line-height: 3rem;
+    font-size: 17px;
+    font-weight: 400;
+}
+.suus {
+    width: 100px;
+    padding: 0px;
+    background-color: transparent;
+    border-color: transparent;
+    color: #006666;
+}
+.suus:hover{
+    color: palevioletred;
+}
+.cont {
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.conbox {
+    width: 500px;
+    height: 590px;
+    background-color: #ffffffb8;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+.tel {
+    width: 116px;
+    padding: 0px;
+    background-color: transparent;
+    border-color: transparent;
+    color: #006666;
+}
+.tel:hover{
+    color: palevioletred;
+}
+.map {
+    height: 80px;
+    width: 230px;
+    font-size: 25px;
+    color: white;
+    background-color: #006666;
+    border-width: 0px;
+    border-radius: 10px;
+    margin-top: -23px;
+}
+.g2box {
+    width: 517px;
+    min-height: 437px;
+    background-color: rgba(255, 255, 255, 0.767);
+    margin-left: auto;
+
+    border-radius: 15px;
+}
+.g3box {
+    width: 517px;
+    min-height: 437px;
+    background-color: rgba(0, 0, 0, 0.479);
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+.fname {
+    margin-left: 60px;
+    margin-top: 50px;
+    width: 389px;
+    height: 70px;
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom: 1px solid #CC9966;
+}
+.femail {
+    margin-left: 60px;
+    margin-top: 20px;
+    width: 389px;
+    height: 70px;
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom: 1px solid #CC9966;
+}
+::placeholder{
+    color: rgba(255, 255, 255, 0.774);
+    font-size: 20px;
+    margin-bottom: auto;
+}
+.message {
+    margin-left: 60px;
+    margin-top: 20px;
+    width: 389px;
+    height: 150px;
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom: 1px solid #CC9966;
+}
+:focus-visible {
+    outline: transparent  0.5px !important;
+}
+.send {
+    margin-left: 388px;
+    margin-top: 10px;
+    background-color: transparent;
+    color: white;
+    border-width: 0px;
+    font-size: 17px;
+    font-weight: 500;
+}
